@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calendar</title>
+</head>
+<body data-url="/calendar">
+
+	<div id="calendar"></div>
+
+	<div>
+		<input type="text" class="datepicker">
+	</div>
+
+
+
+	<script src="ajax.js"></script>
+	<script src="view.js"></script>
+	<script src="template-engine.js"></script>
+	<script src="calendar.js"></script>
+	<script>
+		Calendar.init( document.getElementById( 'calendar' ) );
+		Calendar.init( document.querySelectorAll( '.datepicker' ), { input: true } );
+
+	</script>
+</body>
+</html>
